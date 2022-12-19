@@ -23,7 +23,11 @@
 }
 /*container*/
 .container{
-    outline: orangered;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /*logo, contacts and nav*/
 
@@ -69,6 +73,7 @@
 /*footer*/
 .footer{
     background: var(--title-text-color);
+    
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -106,6 +111,11 @@
 .banner{
     background: var(--title-text-color);
     text-align: center;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .banner-logo{
     font-weight: 600;
@@ -169,6 +179,7 @@
 }
 .teamcards{
     background: var(--light-white-color);
+   
 }
 .teamcards-title{
     font-weight: 600;
