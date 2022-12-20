@@ -15,19 +15,40 @@
 --light-white-color: #F4F4FD;
 
 }
+/*box-sizing*/
+*, ::after,::before{
+    box-sizing: border-box;
+}
+/*blocking header margins*/
+img {
+    display: block;
+}
+h1,h2,h3,h4,h5,h6, ul, li, p {
+    margin: 0;
+}
 /* pages background color */
 .body{
    background-color: var(--standard-white-color);
    color: var(--text-color);
    font-family: Roboto, Raleway, sans-serif;
+   
 }
 /*container*/
 .container{
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    outline: 3px solid orangered;
+   
+}
+.container-footer{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 3px solid orangered;
+    height: 310px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /*logo, contacts and nav*/
 
@@ -56,24 +77,32 @@
     color: var(--title-text-color);
     text-decoration: none;
 }
-.nav-marker{
+.nav-member{
+    list-style-type: none;    
+}
+.nav-member:not(:last-child){
+    padding-right: 40px;
+}
+.contacts-member{
     list-style-type: none;
 }
-.contacts-marker{
-    list-style-type: none;
+.contacts-member:not(:last-child){
+    padding-right: 40px;
 }
+
 .contacts-link{
     color: var(--text-color);
     text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
 }
+
 /*footer*/
 .footer{
     background: var(--title-text-color);
     
+
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -85,6 +114,8 @@
     text-transform: uppercase;
     color: var(--active-color);
     text-decoration: none;
+    width: 44px;
+    height: 22px;
     
 }
 .footer-logo-studio{
@@ -97,6 +128,9 @@
     text-transform: uppercase;
     color: var(--light-white-color);
     text-decoration: none;
+    width: 44px;
+    height: 22px;
+    
 }
 .footer-text{
     font-weight: 400;
@@ -104,6 +138,9 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    width: 264px;
+    height: 72px;
+   
 }
 
  /*-------------index.html styles-------------*/
@@ -114,8 +151,7 @@
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 }
 .banner-logo{
     font-weight: 600;
@@ -123,6 +159,8 @@
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--standard-white-color);
+    margin-bottom: 48px;
+    padding-top: 192px;
 
 }
 /*button index.html*/
@@ -134,17 +172,30 @@
     letter-spacing: 0.04em;
     color: var(--standard-white-color);
     border-color: transparent;
-    left: 635px;
-    top: 432px;
     background: var(--active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    width: 170px;
+    height: 51px;
+    margin-bottom: 192px;
+    
     
     }
 /*important-points index.html*/
-.important-points-marker{
+.important-points{
+    display:flex;
+    padding-top: 120px;
+    flex-wrap: nowrap;
+    
+}
+
+.important-points-member{
+    padding-right: 24px;
+}
+.important-points-member{
     list-style-type: none;
+    width: 288px;
 }
 .important-points-title{
     font-weight: 600;
@@ -152,6 +203,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    padding-bottom: 8px;
     
 }
 .important-points-description{
@@ -169,18 +221,25 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-text-color);
+   padding-bottom: 72px;
+   padding-top: 120px;
 }
-.activities-marker{
+.activities-list{
+    padding-bottom: 120px;
+}
+.activities-member{
     list-style-type: none;
 }
 /*teamcards index.html*/
-.teamcards-marker{
+.teamcards-member{
     list-style-type: none;
+     
 }
 .teamcards{
     background: var(--light-white-color);
-   
 }
+
+
 .teamcards-title{
     font-weight: 600;
     font-size: 36px;
@@ -189,7 +248,12 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-text-color);
-
+    padding-top: 120px;
+    padding-bottom: 72px;
+    
+}
+.teamcards-list{
+    padding-bottom: 72px;
 }
 /*-------------portfolio.html styles-------------*/
 /*buttons and image lists*/
@@ -222,6 +286,8 @@ list-style-type: none;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     cursor: pointer;
+    min-width: 69px;
+    height: 48px;
 }
 
 
