@@ -55,13 +55,13 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
 nav{
     display: flex;
 }
-.nav-list{
+.nav-list,
+ .contacts,
+  .logo{
     display: flex;
+    align-items: center;
 }
 
-.contacts{
-    display: flex;
-}
 .logo{
     font-family: 'Raleway', sans-serif;
   
@@ -98,6 +98,7 @@ nav{
 }
 .contacts{
     margin-left: 332px;
+    
 }
 .contacts-member{
     list-style-type: none;
