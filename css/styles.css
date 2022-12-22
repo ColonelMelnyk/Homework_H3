@@ -13,7 +13,7 @@
 --active-color: #4D5AE5;
 --accent-color: #E7E9FC;
 --light-white-color: #F4F4FD;
-
+--card-set-gap: 20px;
 }
 /*box-sizing*/
 *, ::after,::before{
@@ -92,7 +92,8 @@ nav{
     text-decoration: none;
 }
 .nav-member{
-    list-style-type: none;    
+    list-style-type: none;  
+    display: block;  
 }
 .nav-list{
     margin-left: 76px;
@@ -101,7 +102,7 @@ nav{
     margin-right: 40px;
 }
 .contacts{
-    margin-left: 332px;
+    margin-left: auto;
     
 }
 .contacts-member{
@@ -253,17 +254,9 @@ nav{
    margin-right: 24px;
 }
 /*teamcards index.html*/
-.teamcards-member{
-    list-style-type: none;
-}
-
 .teamcards{
     background: var(--light-white-color);
 }
-.teamcards-list li:not(:last-child){
-   margin-right: 24px;
-}
-
 .teamcards-title{
     font-weight: 600;
     font-size: 36px;
@@ -279,6 +272,13 @@ nav{
 .teamcards-list{
     padding-bottom: 72px;
     display: flex;
+}
+.teamcards-list li:not(:last-child){
+   margin-right: 24px;
+}
+.teamcards-member{
+    list-style-type: none;
+    flex-basis: 264px;
 }
 /*-------------portfolio.html styles-------------*/
 /*buttons and image lists*/
