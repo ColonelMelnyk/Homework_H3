@@ -21,7 +21,7 @@
 *, ::after,::before{
     box-sizing: border-box;
 }
-/*blocking header margins*/
+/*blocking styles*/
 img {
     display: block;
 }
@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
 /*logo, contacts and nav*/
 .header{
     border-bottom: 1px solid #E7E9FC;
-    box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
 }
 nav{
     display: flex;
@@ -299,14 +299,6 @@ nav{
     border-radius: 4px;
     overflow: hidden;
 }
-
-/*.teamcards-list li:not(:last-child){
-   margin-right: 24px;
-}
-.teamcards-member{
-    list-style-type: none;
-    flex-basis: 264px;
-}*/
 /*-------------portfolio.html styles-------------*/
 /*buttons and image lists*/
 .hidden{
@@ -330,6 +322,9 @@ nav{
 .button-list-member{
 list-style-type: none;
 }
+.button-list-member:not(:last-child){
+    margin-right: 24px;
+}
 .portfolio-button{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -344,14 +339,19 @@ list-style-type: none;
     min-width: 69px;
     height: 48px;
 }
+/*image-list portfolio.html*/
 .image-list{
     display: flex;
     margin: 0;
     list-style: none;
     flex-wrap: wrap;
+    padding-bottom: 120px;
 }
-.image-list > .image-list-member:nth-child(-n+3){
-    margin-top: 72px;
+.image-card{
+    overflow: hidden;
+    width: 360px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 }
 .image-list > .image-list-member:nth-last-child(-n+6){
     margin-top: 48px;
@@ -359,13 +359,10 @@ list-style-type: none;
 }
 .image-list-member{
     list-style-type: none;
+    flex-basis: 360px;
 }
 .image-list-member:not(:nth-child(3n+1)){
     margin-left: 24px;
-}
-
-.image{
-    width: 360px;
 }
 .image-title{
     font-weight: 600;
@@ -373,30 +370,29 @@ list-style-type: none;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    padding-left: 16px;
 }
 .image-type{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    
+    padding-left: 16px;
 }
 .image-card-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+    width: 360px;
     padding-top: 32px;
     padding-bottom: 32px;
     gap: 8px;
 }
-.image-card{
-    width: 360px;
-    height: 420px;
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-}
+
+
+    
+
 /*-------------hover and active styles for both pages-------------*/
 .nav-link:hover{
     color: var(--active-color);
