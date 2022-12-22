@@ -271,6 +271,15 @@ nav{
     padding-bottom: 72px;
     
 }
+.teamcard-content{
+    padding: 32px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    }
+
 .teamcards-list{
     display: flex;
     margin: 0;
@@ -279,9 +288,11 @@ nav{
 }
 .teamcards-list > .teamcards-member{
     flex-basis: 264px;
-    margin-left: 24px;
     margin-top: 72px;
     margin-bottom: 120px;
+}
+.teamcards-list > .teamcards-member:not(:first-child){
+    margin-left: 24px;
 }
 .teamcard{
     box-shadow: var(--card-shadow);
