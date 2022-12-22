@@ -14,6 +14,8 @@
 --accent-color: #E7E9FC;
 --light-white-color: #F4F4FD;
 --card-set-gap: 20px;
+--card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 /*box-sizing*/
 *, ::after,::before{
@@ -270,16 +272,30 @@ nav{
     
 }
 .teamcards-list{
-    padding-bottom: 72px;
     display: flex;
+    margin: 0;
+    list-style: none;
+    flex-wrap: nowrap;
 }
-.teamcards-list li:not(:last-child){
+.teamcards-list > .teamcards-member{
+    flex-basis: 264px;
+    margin-left: 24px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+.teamcard{
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/*.teamcards-list li:not(:last-child){
    margin-right: 24px;
 }
 .teamcards-member{
     list-style-type: none;
     flex-basis: 264px;
-}
+}*/
 /*-------------portfolio.html styles-------------*/
 /*buttons and image lists*/
 .hidden{
