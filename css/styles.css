@@ -330,12 +330,6 @@ nav{
 .button-list-member{
 list-style-type: none;
 }
-.button-list li:not(:last-child){
-    margin-right: 24px;
-}
-.image-list-member{
-    list-style-type: none;
-}
 .portfolio-button{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -350,8 +344,29 @@ list-style-type: none;
     min-width: 69px;
     height: 48px;
 }
+.image-list{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.image-list > .image-list-member:nth-child(-n+3){
+    margin-top: 72px;
+}
+.image-list > .image-list-member:nth-last-child(-n+6){
+    margin-top: 48px;
 
+}
+.image-list-member{
+    list-style-type: none;
+}
+.image-list-member:not(:nth-child(3n+1)){
+    margin-left: 24px;
+}
 
+.image{
+    width: 360px;
+}
 .image-title{
     font-weight: 600;
     font-size: 20px;
@@ -365,6 +380,22 @@ list-style-type: none;
     letter-spacing: 0.02em;
     color: var(--text-color);
     
+}
+.image-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 8px;
+}
+.image-card{
+    width: 360px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 }
 /*-------------hover and active styles for both pages-------------*/
 .nav-link:hover{
