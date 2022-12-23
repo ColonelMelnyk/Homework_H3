@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
     margin-right: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding: 15px 15px;
+   
 }
 /*logo, contacts and nav*/
 .header{
@@ -125,8 +125,6 @@ nav{
 /*footer*/
 .footer{
     background: var(--title-text-color);
-    
-
 }
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -347,12 +345,7 @@ list-style-type: none;
     flex-wrap: wrap;
     padding-bottom: 120px;
 }
-.image-card{
-    overflow: hidden;
-    width: 360px;
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-}
+
 .image-list > .image-list-member:nth-last-child(-n+6){
     margin-top: 48px;
 
@@ -389,9 +382,13 @@ list-style-type: none;
     padding-bottom: 32px;
     gap: 8px;
 }
-
-
-    
+/*border */
+.image-card{
+    overflow: hidden;
+    width: 360px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+}
 
 /*-------------hover and active styles for both pages-------------*/
 .nav-link:hover{
