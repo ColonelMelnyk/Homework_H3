@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5,h6, ul, li, p {
 .header{
     border-bottom: 1px solid #E7E9FC;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
     box-shadow: 0px 2px 1px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 1px 6px rgb(46 47 66 / 8%);
 }
 .header-block{
@@ -142,6 +142,9 @@ nav{
     padding-bottom: 100px;
 }
 .footer-logo{
+    padding-bottom: 16px;
+}
+.footer-web{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -155,7 +158,7 @@ nav{
     height: 22px;
     
 }
-.footer-logo-studio{
+.footer-studio{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -176,8 +179,7 @@ nav{
     letter-spacing: 0.02em;
     color: var(--accent-color);
     width: 264px;
-    height: 72px;
-   
+    
 }
 
  /*-------------index.html styles-------------*/
@@ -185,11 +187,8 @@ nav{
 .banner{
     background: var(--title-text-color);
     text-align: center;
-}
-.banner-content{
     padding-bottom: 192px;  
     padding-top: 192px;
-
 }
 .banner-logo{
     font-weight: 600;
@@ -197,7 +196,7 @@ nav{
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--standard-white-color);
-    padding-bottom: 48px;
+    margin-bottom: 48px;
    
 }
 /*button index.html*/
@@ -218,18 +217,18 @@ nav{
    
 }
 /*important-points index.html*/
+.important-points-section{
+    padding-top: 120px;
+
+}
 .important-points{
     display:flex;
-    
     flex-wrap: nowrap;
   
 }
-
-
 .important-points-member{
     list-style-type: none;
     width: 264px;
-    padding-top: 120px;
 }
 .important-points li:not(:last-child){
     margin-right: 24px;
@@ -250,6 +249,10 @@ nav{
     color: var(--text-color);
 }
 /*activities index.html*/
+.activities{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .activities-title{
     font-weight: 600;
     font-size: 36px;
@@ -259,10 +262,10 @@ nav{
     text-transform: capitalize;
     color: var(--title-text-color);
     margin-bottom: 72px;
-    padding-top: 120px;
+    
 }
 .activities-list{
-    padding-bottom: 120px;
+   
     display: flex;
 }
 .activities-member{
@@ -274,6 +277,8 @@ nav{
 /*teamcards index.html*/
 .teamcards{
     background: var(--light-white-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .teamcards-title{
     font-weight: 600;
@@ -283,8 +288,7 @@ nav{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-text-color);
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     
 }
 .teamcard-content{
@@ -294,6 +298,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    background-color: var(--standard-white-color);
 }
 
 .teamcards-list{
@@ -301,11 +306,11 @@ nav{
     margin: 0;
     list-style: none;
     flex-wrap: nowrap;
-    margin-top: 72px;
+    
 }
 .teamcards-list > .teamcards-member{
     flex-basis: 264px;
-    margin-bottom: 120px;
+    
 }
 .teamcards-list > .teamcards-member:not(:first-child){
     margin-left: 24px;
@@ -316,6 +321,11 @@ nav{
     overflow: hidden;
 }
 /*-------------portfolio.html styles-------------*/
+/*section*/
+.portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 /*buttons and image lists*/
 .hidden{
     position: absolute;
@@ -331,7 +341,6 @@ nav{
 }
 .button-list{
     display: flex;
-    padding-top: 96px;
     margin-bottom: 72px;
     justify-content: center ;
 }
@@ -361,7 +370,7 @@ list-style-type: none;
     margin: 0;
     list-style: none;
     flex-wrap: wrap;
-    padding-bottom: 120px;
+    
 }
 
 .image-list > .image-list-member:nth-last-child(-n+6){
