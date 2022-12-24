@@ -216,7 +216,7 @@ nav{
     width: 170px;
     height: 51px;
    
-    }
+}
 /*important-points index.html*/
 .important-points{
     display:flex;
@@ -294,7 +294,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    }
+}
 
 .teamcards-list{
     display: flex;
